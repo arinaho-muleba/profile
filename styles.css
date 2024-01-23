@@ -21,7 +21,7 @@ footer{
 }
 
 
-.body{
+.content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,6 +46,7 @@ footer{
 .logo-image{
     width: 5vw;
     height: 5vw;
+    margin: 0.2rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
     border: 2px solid #fff;
@@ -65,12 +66,13 @@ footer{
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     /* padding: 10px 0; */
 
 }
 
 nav ul li a{
-    color: #fff;
+    color: #ddd;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -81,8 +83,9 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: #f00;
+  
     transition: all .3s ease-in-out;
+    text-shadow: #00f 0px 0px 30px;
 }
 
 .hero nav ul{
@@ -103,7 +106,7 @@ nav ul li a:hover{
 }
 
 .menu-icon i{
-    color: #fff;
+    color: #aaa;
     font-size: 2rem;
     padding: 10px 15px;
     border-radius: 5px;
@@ -111,8 +114,9 @@ nav ul li a:hover{
 }
 
 .menu-icon i:hover {
-    color: #f00;
+    color: #fff;
     transition: all .3s ease-in-out;
+    text-shadow: #00f 0px 0px 30px;
 }
 
 .heading h1{
@@ -170,13 +174,10 @@ nav ul li a:hover{
     font-size: 1.3rem;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 10px 15px; 
     transition: all .3s ease-in-out;
 
 }
-
-
 
 
 
@@ -250,9 +251,7 @@ nav ul li a:hover{
     .hero nav ul{
         display: none;
     }
-    .description {
-       
-    }
+   
 
     .hero{
         width: 100%;
@@ -278,6 +277,17 @@ nav ul li a:hover{
         padding: 0;
         align-items: center;
         justify-content: center;
+    }
+
+    .logo-image{
+        width: 10vw;
+        height: 10vw;
+        margin: 0.2rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        border: none;
+        padding: 0;
+        transition:  1s ease-in-out;
     }
 }
 
